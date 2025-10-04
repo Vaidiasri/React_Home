@@ -9,6 +9,11 @@ import Dynamic_Props from "./components/Dynamic_Props";
 import TextBox from "./components/Text";
 import Auth from "./components/Auth";
 import Check from "./components/Check";
+import Radio from "./components/Radio";
+import Dropdown from "./components/Dropdown";
+import Table_map from "./components/Table_map";
+import Digital from "./components/Digital";
+
 
 export default function App() {
   const [show, setShow] = useState(true);
@@ -24,7 +29,7 @@ export default function App() {
   };
   return (
     <>
-      {show && (
+      {/* {show && (
         <h1 className="text-3xl font-bold underline">Function testing </h1>
       )}
       <button onClick={chup}>Hide</button>
@@ -39,15 +44,23 @@ export default function App() {
           age: 22,
           city: "Ramnagar",
         }}
-      />
+      /> */}
       {/* <Default_props name="Vaibhav" />
       <Default_props />
       <Default_props />
       <Chilld_Prop><h1>Chilld_Prop</h1></Chilld_Prop>
       <Dynamic_Props info=" Morning" />
       <TextBox/> */}
-      <Auth />
-      <Check/>
+      {/* <Auth />
+      <Check/> */}
+      <div className="main">
+        <h1>My Game</h1>
+
+      </div>
+      {/* <Radio />
+      <Dropdown />
+      <Table_map/> */}
+      <Digital/>
     </>
   );
 }
