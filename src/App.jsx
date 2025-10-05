@@ -13,6 +13,9 @@ import Radio from "./components/Radio";
 import Dropdown from "./components/Dropdown";
 import Table_map from "./components/Table_map";
 import Digital from "./components/Digital";
+import Counter from "./components/Counter";
+import Toggle from "./components/Toggle";
+import Live from "./components/Live";
 
 
 export default function App() {
@@ -60,7 +63,10 @@ export default function App() {
       {/* <Radio />
       <Dropdown />
       <Table_map/> */}
-      <Digital/>
+      {/* <Digital/> */}
+      {/* <Counter/> */}
+      {/* <Toggle/> */}
+      <Live/>
     </>
   );
 }
