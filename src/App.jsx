@@ -16,20 +16,25 @@ import Digital from "./components/Digital";
 import Counter from "./components/Counter";
 import Toggle from "./components/Toggle";
 import Live from "./components/Live";
+import Function_as_Props from "./components/Function_as_Props";
+import Time_Update from "./components/Time_Update";
 
 
 export default function App() {
-  const [show, setShow] = useState(true);
-  const [display, setDisplay] = useState(true);
-  const toggle = () => {
-    setDisplay(!display);
-  };
-  const chup = () => {
-    setShow(false);
-  };
-  const dekha = () => {
-    setShow(true);
-  };
+  // const [show, setShow] = useState(true);
+  // const [display, setDisplay] = useState(true);
+  // const toggle = () => {
+  //   setDisplay(!display);
+  // };
+  // const chup = () => {
+  //   setShow(false);
+  // };
+  // const dekha = () => {
+  //   setShow(true);
+  // };
+  const getUser=()=>{
+    alert("Function as Props") // if you want to pass function as props you have to define function in parent component and pass it to child component
+  }
   return (
     <>
       {/* {show && (
@@ -66,7 +71,9 @@ export default function App() {
       {/* <Digital/> */}
       {/* <Counter/> */}
       {/* <Toggle/> */}
-      <Live/>
+      {/* <Live/> */}
+      {/* <Function_as_Props getUser={getUser} /> */}
+      <Time_Update />
     </>
   );
 }
