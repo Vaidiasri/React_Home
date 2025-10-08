@@ -18,6 +18,10 @@ import Toggle from "./components/Toggle";
 import Live from "./components/Live";
 import Function_as_Props from "./components/Function_as_Props";
 import Time_Update from "./components/Time_Update";
+import Data from "./components/Data";
+import Question1 from "./components/Question1";
+import Filter from "./components/Filter";
+
 
 
 export default function App() {
@@ -73,7 +77,10 @@ export default function App() {
       {/* <Toggle/> */}
       {/* <Live/> */}
       {/* <Function_as_Props getUser={getUser} /> */}
-      <Time_Update />
+      {/* <Time_Update /> */}
+      {/* <Data/> */}
+      {/* <Question1/> */}
+      <Filter/>
     </>
   );
 }
